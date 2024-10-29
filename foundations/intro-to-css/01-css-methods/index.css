@@ -2,4 +2,7 @@ div {
     color: white;
     text-align: center;
     background-color: red;
+    font-family: monospace, serif;
+    font-size: 32px;
+    font-weight: 700;
 }
