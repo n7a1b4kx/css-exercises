@@ -61,8 +61,7 @@ ul {
   margin: 0px;
 }
 
-.right-flex,
-.left-flex {
+.right, .left {
   display: flex;
   align-items: center;
   gap: 16px;
@@ -70,10 +69,10 @@ ul {
   margin: 0px;
 }
 
-.right-flex {
+.left {
   justify-content: flex-start;
 }
 
-.left-flex {
+.right {
   justify-content: flex-end;
 }
