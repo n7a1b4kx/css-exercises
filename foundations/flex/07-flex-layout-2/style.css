@@ -27,3 +27,43 @@ body {
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
 }
+
+/* solution ??? */
+
+ul {
+  list-style: none;
+  padding: 0px;
+}
+
+a {
+  color: white;
+  font-size: 22px;
+  text-decoration: none;
+}
+
+body, .header, .sidebar, .footer {
+  display: flex;
+}
+
+body, .sidebar {
+  flex-direction: column;
+}
+
+.header, .footer {
+  align-items: center;
+}
+
+.header {
+  font-size: 32px;
+  font-weight: 800;
+  padding-left: 16px;
+}
+
+.footer {
+  justify-content: center;
+}
+
+.sidebar {
+  flex-shrink: 0;
+  padding: 16px;
+}
