@@ -2,7 +2,6 @@
 
 body {
   height: 100vh;
-  margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
 }
@@ -27,20 +26,30 @@ input {
 
 /* solution ??? */
 
-.header, .footer {
+.header, .footer, ul, body {
+  margin: 0px;
+}
+
+.header, .footer, .content, .left-links, .right-links, body {
   display: flex;
+}
+
+.content, body {
+  flex-direction: column;
+}
+.header, .footer {
+  padding: 16px;
   justify-content: space-between;
 }
 
 .right-links, .left-links {
-  display: flex;
+  padding: 0px;
   gap: 16px;
-  padding-left: 16px;
-  padding-right: 16px;
 }
+
 a {
   text-decoration: none;
-  color: palegoldenrod
+  color: #666;
 }
 
 ul {
@@ -49,4 +58,11 @@ ul {
 
 input {
   outline-color: black;
+}
+
+.content {
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  flex: 1;
 }
