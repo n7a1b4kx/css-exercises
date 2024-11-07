@@ -24,3 +24,29 @@ input {
   padding: 8px 24px;
   width: 400px;
 }
+
+/* solution ??? */
+
+.header, .footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.right-links, .left-links {
+  display: flex;
+  gap: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+a {
+  text-decoration: none;
+  color: palegoldenrod
+}
+
+ul {
+  list-style-type: none;
+}
+
+input {
+  outline-color: black;
+}
