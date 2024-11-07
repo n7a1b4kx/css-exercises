@@ -32,20 +32,25 @@ body {
 
 ul {
   list-style: none;
+  margin: 0px;
   padding: 0px;
+}
+
+li {
+  margin-bottom: 16px;
 }
 
 a {
   color: white;
-  font-size: 22px;
+  font-size: 24px;
   text-decoration: none;
 }
 
-body, .header, .sidebar, .footer {
+body, .header, .sidebar, .footer, .container, .main {
   display: flex;
 }
 
-body, .sidebar {
+body {
   flex-direction: column;
 }
 
@@ -66,4 +71,15 @@ body, .sidebar {
 .sidebar {
   flex-shrink: 0;
   padding: 16px;
+}
+
+.container {
+  padding: 48px;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.card {
+  padding: 16px;
+  max-width: 300px;
 }
